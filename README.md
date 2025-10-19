@@ -1,5 +1,5 @@
 # primera web
-Esta es la prrimera página web que estamos desarrollando en Taller Multimedia Transmedia.
+Esta es la primera página web que estamos desarrollando en Taller Multimedia Transmedia.
 
 ## Quién soy
 
