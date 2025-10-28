@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(225, 255, 255);
+}
+
+#lienzo {
+    width: 500px;
+    height: 500px;
+    border: 3px black solid;
+    background-color: rgb(50, 219, 143);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cara {
+    width: 60%;
+    height: 70%;
+    /*border: 1px black solid;*/
+    background-color: rgb(250, 231, 146);
+    border-radius: 50%;
+    position: relative;
+}
+.ojo {
+    background-color: rgb(33, 244, 251);
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    border: 15px black solid;
+}
+#ojoIzq {
+left: 15%;
+}
+#ojoDer {
+    right: 15%;
+}
+
+#boca {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(251, 33, 98);
+    width: 10%;
+    height: 10%;
+    bottom: 20%;
+    left: 45%;
+}
