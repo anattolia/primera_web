@@ -1,5 +1,13 @@
+:root {
+  --color-piel: #eee0cb;
+}
+
 body {
     background-color: rgb(225, 255, 255);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #lienzo {
@@ -10,16 +18,28 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    margin: 20px;
+}
+
+@keyframes colorearCara {
+  0% {background-color: rgb(255, 255, 255);width: 65%; height: 70%}
+  50% {background-color: rgb(255, 0, 0); width: 75%; height: 80% }
+  100% {background-color: rgb(255, 255, 255); width: 65%; height: 70%}
 }
 
 #cara {
-    width: 60%;
+    width: 65%;
     height: 70%;
     /*border: 1px black solid;*/
-    background-color: rgb(250, 231, 146);
+    background-color: var(--color-piel);
     border-radius: 50%;
     position: relative;
+    animation-name: colorearCara;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
+
+
 .ojo {
     background-color: rgb(33, 244, 251);
     width: 15%;
@@ -29,19 +49,40 @@ body {
     top: 20%;
     border: 15px black solid;
 }
+
 #ojoIzq {
 left: 15%;
 }
+
+#ojoIzq:hover {
+background-color: rgb(91, 251, 33);
+}
+
 #ojoDer {
     right: 15%;
 }
 
-#boca {
-    position: absolute;
+#nariz {
+  position: absolute;
+    background-color: rgba(240, 202, 12);
+    width: 35px;
+    height: 21px;
+    bottom: 42%;
+    left: 44%;
     border-radius: 50%;
-    background-color: rgb(251, 33, 98);
-    width: 10%;
-    height: 10%;
-    bottom: 20%;
-    left: 45%;
+}
+
+#boca {
+   position: absolute;
+    background-color: rgba(70, 69, 69, 0);
+    width: 70px;
+    height: 20px;
+    bottom: 27%;
+    left: 39%;
+    border-radius: 50%;
+    border-bottom: 5px rgb(253, 18, 18) solid;
+}
+
+#boca:hover {
+    background-color: rgb(253, 18, 18);
 }
